@@ -7,7 +7,7 @@ pipeline {
         stage('Initialize the docker compose') {
             steps {
                 //sh
-                bat "docker compose up hub chrome firefox"
+                bat "docker compose up -d hub chrome firefox"
             }
         }
         stage('Build Image') {
