@@ -32,5 +32,5 @@ services:
       - BROWSER=chrome
       - HUB_HOST=hub
       - MODULE=testng.xml
-  #  volumes:
-  #    - $PWD/test-output-docker-test-run:/usr/share/udemy/test/output
+    volumes:
+      - $PWD/test-output-docker-test-run:/usr/share/udemy/test/output
