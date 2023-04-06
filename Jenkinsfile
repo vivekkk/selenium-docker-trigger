@@ -22,13 +22,14 @@ pipeline {
                 bat "docker compose up testng"
             }
         }
-        post
+
+        
+    }
+         post
         {
             always
             {
                 bat "docker compose down"
             } 
         }
-        
-    }
 }
