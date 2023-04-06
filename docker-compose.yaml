@@ -34,5 +34,5 @@ services:
       - MODULE=testng.xml
     volumes:
       - type: bind
-        source:/usr/share/udemy/test-output
-        target:./test-output-docker-test-run
+        source: /usr/share/udemy/test-output
+        target: ./test-output-docker-test-run
