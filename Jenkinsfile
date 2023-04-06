@@ -16,11 +16,18 @@ pipeline {
                 bat "docker compose up -d hub chrome firefox"
             }
         }
-        stage('Build Image') {
+        stage('Running tests') {
             steps {
                 //sh
                 bat "docker compose up testng"
             }
+        }
+        post
+        {
+            always
+            {
+                bat "docker compose down"
+            } 
         }
         
     }
