@@ -33,4 +33,4 @@ services:
       - HUB_HOST=hub
       - MODULE=testng.xml
     volumes:
-      - $(pwd)/test-output-docker-test-run:/usr/share/udemy/test-output:rw
+      - ./test-output-docker-test-run:/usr/share/udemy/test-output
